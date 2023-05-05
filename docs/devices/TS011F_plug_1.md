@@ -38,9 +38,13 @@ If your plug is affected, it will be detected as [TS011F_plug_3](TS011F_plug_3.m
 
 <!-- cfr: https://github.com/Koenkk/zigbee2mqtt/issues/9057 -->
 
-### Broken attribute reporting functionality in devices sold as BW-SHP13
+### Broken attribute reporting functionality in some device types
 
-In 2022, BlitzWolf started to sell BW-SHP13 that identify as ```_TZ3000_amdymr7l```. Those devices report power, current and voltage unreliably: Changes in any of those metrics sometimes take a few minutes before being reported and constant loads are reported as 0 for a few minutes just to return to their expected values a few minutes later. There is no known workaround for that behaviour.
+Some devices report power, current and voltage unreliably: Changes in any of those metrics sometimes take a few minutes before being reported and constant loads are reported as 0 for a few minutes just to return to their expected values a few minutes later. There is no known workaround for that behaviour.
+
+Known devices with this issue:
+In 2022, BlitzWolf started to sell BW-SHP13 that identify as ```_TZ3000_amdymr7l```.  
+Tuya device ````TS011F_plug_1```` with manufacturer id  ```_TZ3000_typdpbpg```
 
 <!-- cfr: https://github.com/Koenkk/zigbee2mqtt/issues/11800 -->
 
